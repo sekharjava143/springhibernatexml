@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+  <class name="com.spring.bean.User" table="NEWUSER">
+	   <id name="userId" type="int" column="USERID" >
+	   <generator class="increment" />
+	  </id>
+
+	  <property name="name">
+		 <column name="NAME" />
+	  </property>
+	  <property name="city">
+		<column name="CITY"/>
+	  </property>
+   </class>
+
+</hibernate-mapping>
